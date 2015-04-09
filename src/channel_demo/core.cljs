@@ -5,5 +5,5 @@
 
 (enable-console-print!)
 
-
-
+(om/root views/main data/app-state
+  {:target (. js/document (getElementById "app"))})

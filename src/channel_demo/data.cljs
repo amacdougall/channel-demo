@@ -3,4 +3,6 @@
             [cljs.core.async :refer [chan timeout <! >! put! close!]])
   (:require-macros [cljs.core.async.macros :refer [go go-loop]]))
 
-(defonce app-state (atom {:text "Hello world!"}))
+(def initial-state {:colors []})
+
+(defonce app-state (atom initial-state))
